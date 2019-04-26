@@ -104,7 +104,9 @@ namespace i_merger
                         string form2_data_md5 = string.Empty;
                         string cdda_data_md5 = string.Empty;
 
-                        string file_name = file.Replace(df.directory + "\\", "");
+                        string file_name = file.Replace(df.directory + Path.DirectorySeparatorChar, "");
+
+                        //string test_file_name = Path.
 
                         BinaryWriter map_for_file = new BinaryWriter(new MemoryStream());
 
